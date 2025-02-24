@@ -19,11 +19,6 @@ def acessar_mercado_livre():
     busca_box.send_keys(Keys.RETURN)
 
 
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, "//ol/li"))
-    )
-
-
     produtos = []
 
     
